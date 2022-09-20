@@ -1,0 +1,107 @@
+/* * {
+    background-color: cyan;
+} */
+
+body {
+    background-color: #f1faee;
+}
+
+button {
+    font-size: 30px;
+    background-color: #a8dadc;
+}
+
+h1,h2 {
+    color: #1d3557;
+}
+
+#signup{
+    background-color: #1d3557;
+    color: #f1faee;
+}
+
+span {
+    color: #457b9d;
+}
+
+.tag {
+    background-color: #e63946;
+    color: #f1faee;
+    font-size: 16px;
+}
+
+.post a {
+    color: #457b9d;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+footer a {
+    color: #e63946;
+}
+
+/* adjacent seletor: combinator */
+/* any button come right after h2, on the same level: */
+h2 + button {
+    font-size: 20px;
+}
+
+/* direct-descendant selector */
+/* direct child(onlyone level down) */
+footer > a {
+    color: #457b9d;
+}
+
+/* type attribute selector*/
+input[type="password"] {
+    color: greenyellow;
+}
+
+/* <a> element with an href attribute contains "google" */
+a[href*="google"]{
+    color: #1d3557;
+}
+
+/* pseudo classes, for the spcific state of a element */
+/* hover a button inside a class post, other buttons will not be effected */
+.post a:hover {
+    text-decoration: underline;
+}
+
+
+.post button:active {
+    background-color: #02c39a;
+}
+
+/* every second post will be selected */
+.post:nth-of-type(2n){
+    background-color: #dfe8dc;
+}
+
+/* pseudo elements examples: */
+h2::first-letter {
+    font-size: 50px;
+}
+
+p::first-line {
+    color: purple;
+}
+
+p::selection {
+    background-color: #fcbf49;
+}
+
+
+.post button:hover {
+    background-color: #e63946;
+    color: #f1faee;
+}
+
+button:hover {
+    background-color: olive;
+}
+
+/* ignore the specificity, and force the sign-in button to magenta  */
+button {
+    background-color: magenta !important;
+}
