@@ -1,0 +1,29 @@
+
+/*inline element*/
+span {
+    background-color: palevioletred;
+    border: 1px solid black;
+    width: 500px;  /*inline element will ignore width and height*/
+    padding: 50px; /* padding works, but it is not effect other contents */
+    margin: 50px; /* margin works horizontally, but not vertically */
+}
+
+/*block element*/
+h1 {
+    background-color: paleturquoise;
+    border: 1px solid black;
+    width: 300px;
+    padding: 50px;
+    margin: 100px;
+}
+
+
+div {
+    height: 200px;
+    width: 200px;
+    background-color: olivedrab;
+    border: 5px solid black;
+    display: inline-block; /*behave like an inline element except width, height, margin, padding are respected*/
+    margin: 50px;
+
+}
