@@ -1,0 +1,54 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+h1, h2{
+    text-align: center;
+}
+#container {
+    background-color: #003049;
+    width: 90%;
+    /* height: 500px; */
+    margin: 0 auto;
+    border: 5px solid #003049;
+    display: flex;
+    flex-direction: row; /*main axis, could be reversed*/
+    justify-content: center; /*space-between;space-around;space-evenly*/
+    /* flex-wrap: wrap; */ /*destribute elements along main axis, wrap over to the next row*/
+    /* align-items: flex-end; */ /*destribute elements along the cross axis. base-line*/
+    /*align-content, have to have wrap*/
+}
+
+#container div {
+    width: 200px;
+    height: 200px;
+    /* max-width: 300px; */
+    text-align:center;
+    flex-basis: 600px; /*along main axis direction, defines the initial size of an element b4 addtional space is distributed*/
+}
+
+div:nth-of-type(1) {
+    flex-grow: 1; /*controls the amount of available space an element should take up.accepts a unit-less number value*/
+    flex-shrink:2; /*if items are larger than the container, they shrink according to flex-shrink*/
+}
+div:nth-of-type(5) {
+    flex-grow: 2;
+}
+
+
+main {
+    width: 80%;
+    margin: 0 auto;
+    border: 5px solid black;
+    height: 500px;
+    display: flex;
+}
+main .sidebar {
+    background-color: #6930c3;
+    flex:1 2 300px; /*short hand*/
+}
+main .maincontent {
+    background-color: #80ffdb;
+    flex: 2 1 800px;
+}
+
+
