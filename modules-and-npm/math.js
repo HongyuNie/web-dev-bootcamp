@@ -8,10 +8,10 @@ const square = x => x * x;
 // exports.PI = PI;
 
 // =========================
-module.exports = "HELLLOOO";
+// module.exports = "HELLLOOO";
 
-// module.exports.add = add;
-// module.exports.PI = PI;
-// module.exports.square = square;
+module.exports.add = add;
+module.exports.PI = PI;
+module.exports.square = square;
 
 
