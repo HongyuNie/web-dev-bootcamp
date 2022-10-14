@@ -3,20 +3,17 @@
 const express = require("express");
 const app = express();
 
-//run this file also typing"localhost:3000"
-//print out new request everytime refreshing
-app.use(() => {
+
+app.use((req, res) => {
     console.log("WE GOT A NEW REQUEST!!")
+    // res.send("DUDUDU")
+    res.send('<h1>This is my webpage!</h1>')
+    // console.dir(req)
 })
 
-app.listen(3000, () => { 
-    console.log("LISTENING ON PORT 3000!")
+app.listen(8080, () => { 
+    console.log("LISTENING ON PORT 8080!")
 })
-
-// app.use((req, res) => {
-//     console.log("WE GOT A NEW REQUEST!!")
-//     res.send('<h1>This is my webpage!</h1>')
-// })
 
 
 // app.get('/', (req, res) => {
