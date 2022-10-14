@@ -16,6 +16,11 @@ app.get('/cats', (req, res) => {
     res.send('MEOOOOWW!')
 })
 
+app.post('/cats', (req, res) => { 
+    // console.log("CAT REQUEST!!")
+    res.send('CATS POSTS REQUEST!')
+})
+
 app.get('/dogs', (req, res) => { 
     // console.log("DOG REQUEST!!")
     res.send('WOOOOOF!')
