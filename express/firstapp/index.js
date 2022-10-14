@@ -3,9 +3,15 @@
 const express = require("express");
 const app = express();
 
+//run this file also typing"localhost:3000"
+//print out new request everytime refreshing
+app.use(() => {
+    console.log("WE GOT A NEW REQUEST!!")
+})
 
-//check out the methods by running node index.js on the terminal
-console.dir(app);
+app.listen(3000, () => { 
+    console.log("LISTENING ON PORT 3000!")
+})
 
 // app.use((req, res) => {
 //     console.log("WE GOT A NEW REQUEST!!")
@@ -50,13 +56,6 @@ console.dir(app);
 // app.get('*', (req, res) => {
 //     res.send(`I don't know that path!`)
 // })
-
-
-
-
-// // /cats => 'meow'
-// // /dogs => 'woof'
-// // '/' 
 
 
 
