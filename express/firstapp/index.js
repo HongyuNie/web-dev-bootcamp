@@ -29,3 +29,7 @@ app.get('/dogs', (req, res) => {
 app.get('/', (req, res) => { 
     res.send('WELCOME TO ANIMALS SOUNDS PAGE!')
 })
+
+app.get('*', (req, res) => { 
+    res.send('IDK...')
+})
