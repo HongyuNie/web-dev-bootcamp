@@ -30,6 +30,8 @@ app.get('/', (req, res) => {
     res.send('WELCOME TO ANIMALS SOUNDS PAGE!')
 })
 
+
+//routes are matched in order, if put this in above, /cats or /dogs will both be unknown.
 app.get('*', (req, res) => { 
     res.send('IDK...')
 })
