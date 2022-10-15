@@ -40,11 +40,22 @@ app.get('/r/:subreddit', (req, res) => {
 
 
 //more pattern match
+//colon is for variables
 app.get('/r/:subreddit/:postId', (req, res) => {
     // console.log(req.params)
     const { subreddit, postId } = req.params
     res.send(`<h1>Viewing the Post ID: ${postId} on the ${subreddit} subreddit </h1>`)
     // res.send('SUBREDDIT ALERT!!!')
+})
+
+
+app.get('/search', (req, res) => {
+    console.log(req.query) //could handle multiply query key value pairs
+    const { q } = req.query; 
+    if (!q) {
+        res.send('NOTHING FOUND IF NOTHING SEARCHED!!')
+    }
+    res.send(`<h1>Search results for: ${q}</h1>`)
 })
 
 //routes are matched in order, if put this in above, /cats or /dogs will both be unknown. * means matchs any single request
