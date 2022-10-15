@@ -39,6 +39,14 @@ app.get('/r/:subreddit', (req, res) => {
 })
 
 
+//more pattern match
+app.get('/r/:subreddit/:postId', (req, res) => {
+    // console.log(req.params)
+    const { subreddit, postId } = req.params
+    res.send(`<h1>Viewing the Post ID: ${postId} on the ${subreddit} subreddit </h1>`)
+    // res.send('SUBREDDIT ALERT!!!')
+})
+
 //routes are matched in order, if put this in above, /cats or /dogs will both be unknown. * means matchs any single request
 app.get('*', (req, res) => { 
     res.send('IDK...')
