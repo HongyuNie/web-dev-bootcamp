@@ -4,7 +4,7 @@ const app = express();
 app.set('view engine', 'ejs') //a key value pair
 
 app.get('/', (req, res) => { 
-    res.send("HI");
+    res.render('home.ejs');
 })
 
 app.listen(3000, () => { 
