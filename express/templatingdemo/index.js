@@ -6,6 +6,8 @@ const path = require('path');
 const redditData = require('./data.json');
 // console.log(redditData)
 
+app.use(express.static(path.join(__dirname, '/public')))
+
 app.set('view engine', 'ejs') //a key value pair
 
 app.set('views', path.join(__dirname, '/views'));//using the directory name where index.js is located. allow you to run outside the correct folder
