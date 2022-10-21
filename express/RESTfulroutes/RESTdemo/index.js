@@ -57,7 +57,14 @@ app.get('/comments/:id', (req, res) => {
     res.render('comments/show', {comment});
 })
 
-
+//for updating a existing comment, only revising comments content without user name and id
+app.patch('/comments/:id', (req, res) => {
+    const { id } = req.params;
+    const newCommentText = req.body.comment;
+    const foundComment = comments.find(c => c.id === id);
+    foundComment = newCommentText;
+    res.redirect('/comments');
+})
 
 app.get('/tacos', (req, res) => { 
     res.send("GET /tacos response");
