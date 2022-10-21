@@ -37,6 +37,17 @@ app.get('/comments', (req, res) => {
     res.render('comments/index', {comments});
 })
 
+app.get('/comments/new', (req, res) => {
+    res.render('comments/new', {comments});
+})
+
+app.post('/comments', (req, res) => { 
+    // console.log(req.body);
+    const { username, comment } = req.body;
+    comments.push({ username, comment });
+    res.send('YAYAY!!');
+})
+
 
 app.get('/tacos', (req, res) => { 
     res.send("GET /tacos response");
