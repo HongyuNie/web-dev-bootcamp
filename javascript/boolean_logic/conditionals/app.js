@@ -13,6 +13,7 @@ console.log(random);
 // PROMPT EXAMPLE
 // =====================
 
+// prompt: instructs the browser to display a dialog with an optional message prompting the user to input some text, and to wait until the user either submits the text or cancels the dialog
 const dayOfWeek = prompt('ENTER A DAY').toLowerCase();
 
 if (dayOfWeek === 'monday') {
@@ -57,7 +58,7 @@ const password = prompt("please enter a new password");
 
 // Password must be 6+ characters
 if (password.length >= 6) {
-    // Password cannot include space
+    // Password cannot include space, check if there is any spaces
     if (password.indexOf(' ') === -1) {
         console.log("Valid Password!");
     } else {

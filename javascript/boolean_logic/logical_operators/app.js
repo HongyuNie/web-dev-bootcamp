@@ -17,9 +17,9 @@ if (password.length >= 6 && password.indexOf(' ') === -1) {
 // 10-65 $20
 // 65+ free
 
-const age = 100;
+var age = 100;
 if ((age >= 0 && age < 5) || age >= 65) {
-    console.log("FREE");
+    console.log("FREE"); 
 } else if (age >= 5 && age < 10) {
     console.log("$10")
 } else if (age >= 10 && age < 65) {
@@ -36,10 +36,10 @@ if ((age >= 0 && age < 5) || age >= 65) {
 // =====================
 // COMBINING && and ||
 // =====================
-const age = 8;
-if (!(age >= 0 && age < 5 || age >= 65)) {
+// && prior to ||
+var age = 8;
+if (!(age >= 0 && age < 5 || age >= 65))
     console.log("YOU ARE NOT A BABY OR A SENIOR!")
-}
 
 
 
