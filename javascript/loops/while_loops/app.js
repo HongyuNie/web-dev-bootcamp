@@ -31,16 +31,19 @@ while (!maximum) {
 
 const targetNum = Math.floor(Math.random() * maximum) + 1;
 
-let guess = parseInt(prompt("Enter your first guess!"));
+let guess = prompt("Enter your first guess!"); //1. should not parseInt here
 let attempts = 1;
 
 while (parseInt(guess) !== targetNum) {
     if (guess === 'q') break;
     attempts++;
     if (guess > targetNum) {
-        guess = prompt("Too high! Enter a new guess:");
-    } else {
+        guess = prompt("Too high! Enter a new guess:"); //reassign guess to a string, not parseInt here to make sure 'q' works.
+    } else if (guess < targetNum) {
         guess = prompt("Too low! Enter a new guess:");
+    } // if input is NaN also goes in to here (if 1 is false)
+    else { 
+        guess = prompt(`Guess is ${guess}, neither higher or lower, enter a new vaild number:`)
     }
 }
 
