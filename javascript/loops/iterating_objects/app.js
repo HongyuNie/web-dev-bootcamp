@@ -28,5 +28,5 @@ let scores = Object.values(testScores);
 for (let score of scores) {
     total += score;
 }
-console.log(total / scores.length)
+console.log(total / scores.length) // object literal has no .length
 
