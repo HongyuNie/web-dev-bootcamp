@@ -28,7 +28,7 @@ birdWatch()
 // console.log(msg)
 
 // for (let i = 0; i < 5; i++) {
-//     let msg = "ASKLDJAKLSJD";
+//     let msg = "ASKLDJAKLSJD"; //if use var keyword will scope the variable to functions, not blocks any more
 //     console.log(msg)
 // }
 // console.log(msg)
