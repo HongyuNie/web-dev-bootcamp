@@ -4,13 +4,16 @@ document.querySelector('button').addEventListener('click', function (evt) {
 
 // const input = document.querySelector('input');
 // input.addEventListener('keydown', function (e) {
+//     console.log(e)
 //     console.log(e.key)
-//     console.log(e.code)
+//     console.log(e.code) //correspond to the keyboard location
+//     // console.log("KEYDOWN")
 // })
-// input.addEventListener('keyup', function () {
-//     console.log("KEYUP")
-// })
+// // input.addEventListener('keyup', function () {
+// //     console.log("KEYUP")
+// // })
 
+// click anywhere, not specific in one area
 window.addEventListener('keydown', function (e) {
     switch (e.code) {
         case 'ArrowUp':

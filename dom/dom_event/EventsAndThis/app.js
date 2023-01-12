@@ -16,6 +16,8 @@ for (let h1 of h1s) {
     h1.addEventListener('click', colorize)
 }
 
+// keyword this refers to whatever is clicked on that trigger this function being called
+
 function colorize() {
     this.style.backgroundColor = makeRandColor();
     this.style.color = makeRandColor();

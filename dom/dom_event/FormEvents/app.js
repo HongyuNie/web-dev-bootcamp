@@ -3,7 +3,7 @@
 const tweetForm = document.querySelector('#tweetForm');
 const tweetsContainer = document.querySelector('#tweets');
 tweetForm.addEventListener('submit', function (e) {
-    e.preventDefault();
+    e.preventDefault(); //for preventing jumping to action spot without showing the results of the code below
 
     // const usernameInput = document.querySelectorAll('input')[0];
     // const tweetInput = document.querySelectorAll('input')[1];
