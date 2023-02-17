@@ -1,2 +1,15 @@
-This repo contains all the code snippets as a result of learning the course "
-The Web Developer Bootcamp 2022" by Colt Steele on Udemy.
+# The Web Developer Bootcamp 2022 - by Colt Steele on Udemy.com
+
+
+### Mini Projects
+
+### HTML & CSS
+
+- [Museum of Candy](https://web-dev-bootcamp-cexj.vercel.app/#)
+
+### JavaScript
+
+### DOM
+
+- [ScoreKeeper](https://web-dev-bootcamp-amm2af863-hongyunie.vercel.app/)
+
