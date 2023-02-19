@@ -7,9 +7,5 @@
 
 - [Museum of Candy](https://web-dev-bootcamp-cexj.vercel.app/#)
 
-### JavaScript
-
-### DOM
-
 - [ScoreKeeper](https://web-dev-bootcamp-amm2af863-hongyunie.vercel.app/)
 
