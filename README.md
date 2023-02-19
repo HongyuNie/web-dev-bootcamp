@@ -1,9 +1,7 @@
 # The Web Developer Bootcamp 2022 - by Colt Steele on Udemy.com
 
 
-### Mini Projects
-
-### HTML & CSS
+### Mini-Projects Showcase
 
 - [Museum of Candy](https://web-dev-bootcamp-cexj.vercel.app/#)
 
