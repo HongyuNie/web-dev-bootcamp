@@ -9,5 +9,7 @@
 
 - [Price Tiers](https://web-dev-bootcamp-miniprojects-1-gqbr.vercel.app/)
 
-- [ScoreKeeper](https://web-dev-bootcamp-amm2af863-hongyunie.vercel.app/)
+- [Pokemon API](https://web-dev-bootcamp-miniprojects-2.vercel.app/)
+
+- [ScoreKeeper](https://web-dev-bootcamp-miniprojects-2-8qle.vercel.app/)
 
