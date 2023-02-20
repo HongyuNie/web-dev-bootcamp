@@ -13,3 +13,7 @@
 
 - [ScoreKeeper](https://web-dev-bootcamp-miniprojects-2-8qle.vercel.app/)
 
+- [Dad Jokes](https://web-dev-bootcamp-miniprojects-3.vercel.app/) 
+
+- [TV Show Search](https://web-dev-bootcamp-miniprojects-3-xnvr.vercel.app/)
+
