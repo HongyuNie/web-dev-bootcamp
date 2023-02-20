@@ -3,7 +3,11 @@
 
 ### Mini-Projects Showcase
 
-- [Museum of Candy](https://web-dev-bootcamp-cexj.vercel.app/#)
+- [Museum of Candy](https://web-dev-bootcamp-miniprojects-1.vercel.app/)
+
+- [Photos Site](https://web-dev-bootcamp-miniprojects-1-gnkh.vercel.app/)
+
+- [Price Tiers](https://web-dev-bootcamp-miniprojects-1-gqbr.vercel.app/)
 
 - [ScoreKeeper](https://web-dev-bootcamp-amm2af863-hongyunie.vercel.app/)
 
